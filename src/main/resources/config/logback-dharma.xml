@@ -4,9 +4,9 @@
 	<!-- 文件输出格式 -->
 	<property name="PATTERN" value="%-12(%d{yyyy-MM-dd HH:mm:ss.SSS}) |-%-5level [%thread] %c [%L] -| %msg%n" />
 	<!-- staging文件路径, 要提前在用户目录下创建好文件夹/logs/staging，username是用户名 -->
-	<property name="TEST_FILE_PATH" value="/Users/username/logs/staging" />
+	<property name="TEST_FILE_PATH" value="/Users/guomanya/logs/staging" />
 	<!-- prod文件路径, 要提前在用户目录下创建好文件夹/logs/prod，username是用户名 -->
-	<property name="PROD_FILE_PATH" value="/Users/username/logs/prod" />
+	<property name="PROD_FILE_PATH" value="/Users/guomanya/logs/prod" />
 
 	<!-- 开发环境 -->
 	<springProfile name="dev">
@@ -16,7 +16,7 @@
 			</encoder>
 		</appender>
 
-		<logger name="com.dharma.boot" level="debug"/>
+		<logger name="com.damo.bootmall" level="debug"/>
 
 		<root level="info">
 			<appender-ref ref="CONSOLE" />

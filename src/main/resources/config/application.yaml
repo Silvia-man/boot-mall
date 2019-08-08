@@ -1,5 +1,2 @@
 damo:
   version: ${random.uuid}-yaml
-logging:
-  config:
-    classpath: logback-dharma.xml

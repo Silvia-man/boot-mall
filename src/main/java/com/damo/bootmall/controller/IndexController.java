@@ -30,12 +30,10 @@ public class IndexController {
     @Value(value = "${damo.version}")
     private String version;
 
-    @Value(value = "${damo.unkown:defaunt")
+    @Value(value = "${damo.unknown:default}")
     private String unknown;
 
     @Value(value = "#{admin.name}")
-    private String admin;
-
     @Bean
     public Admin admin() {
         return new Admin("man");
@@ -57,7 +55,7 @@ public class IndexController {
         map.put("team", team);
         map.put("version", version);
         map.put("author", name);
-        map.put("admin", admin);
+        map.put("admin", admin());
         return map;
     }
 
