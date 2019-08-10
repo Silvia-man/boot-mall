@@ -1,10 +1,9 @@
-package com.damo.bootmall.controller.serlvet;
+package com.damo.bootmall.serlvet;
 
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
-import javax.servlet.annotation.WebServlet;
 
 @WebListener
 public class CustomListener implements ServletContextListener {

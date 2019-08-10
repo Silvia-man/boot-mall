@@ -1,9 +1,24 @@
 package com.damo.bootmall.bean;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "product")
 public class Product {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+
+    @Column
     private String name;
+
+    @Column
     private Double price;
+
+    public Product() {
+    }
 
     public Product(int id, String name, Double price) {
         this.id = id;
@@ -33,5 +48,10 @@ public class Product {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +"id=" + id + ", name='" + name + " \', price=" + price +"}";
     }
 }

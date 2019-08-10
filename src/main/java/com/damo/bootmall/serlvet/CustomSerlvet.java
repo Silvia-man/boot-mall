@@ -1,4 +1,4 @@
-package com.damo.bootmall.controller.serlvet;
+package com.damo.bootmall.serlvet;
 
 
 import javax.servlet.ServletException;

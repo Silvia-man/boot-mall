@@ -8,6 +8,23 @@
 </head>
 <body>
     <h1>PRODUCTS</h1>
+
+
+    <form action="/web/product" method="post">
+        <div class="row">
+            <div class="col">
+                <input type="text" name="name" class="form-control" placeholder="Name">
+            </div>
+            <div class="col">
+                <input type="text" name="price" class="form-control" placeholder="Price">
+            </div>
+            <div class="col">
+                <button id="create" name="submit" type="submit" class="btn btn-primary">CREATE PRODUCT</button>
+            </div>
+        </div>
+    </form>
+
+
     <#list products>
     <table class="table table-hover table-striped">
         <thead>
@@ -32,3 +49,4 @@
     </#list>
 </body>
 </html>
+

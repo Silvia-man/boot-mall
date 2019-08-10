@@ -8,7 +8,6 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 @ServletComponentScan
 @SpringBootApplication
 public class BootMallApplication {
-
     public static void main(String[] args) {
         SpringApplication.run(BootMallApplication.class, args);
     }

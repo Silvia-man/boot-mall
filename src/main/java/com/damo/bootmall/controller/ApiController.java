@@ -1,10 +1,7 @@
 package com.damo.bootmall.controller;
 
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 
@@ -18,5 +15,15 @@ public class ApiController {
         map.put("action", "hello");
         map.put("name", name);
         return map;
+    }
+
+    @RequestMapping("/divide/{d1}/{d2}")
+    public String divide(@PathVariable Double d1, @PathVariable Double d2) throws Exception {
+
+        if(d2 == 0) {
+            throw new Exception("divide exception");
+        } else {
+            return Double.toString(d1/d2);
+        }
     }
 }
